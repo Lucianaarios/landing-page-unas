@@ -1,0 +1,42 @@
+.gallery {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gridItem {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gridItem:hover .image {
+    transform: scale(1.1);
+  }
