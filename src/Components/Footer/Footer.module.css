@@ -1,47 +1,46 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .links {
-    margin-bottom: 20px;
-  }
-  
-  .link {
-    color: #ff69b4;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .socialMedia {
-    margin-bottom: 20px;
-  }
-  
-  .icon {
-    margin: 0 10px;
-    display: inline-block;
-  }
-  
-  .icon img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .copyright {
-    font-size: 14px;
-    color: #ccc;
-  }
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.discountContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.discountImage {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.discountTextContainer {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.discountText {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ctaButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctaButton:hover {
+  background-color: #e65a9e;
+}

@@ -3,27 +3,31 @@ import styles from './Services.module.css';
 
 const Services: React.FC = () => {
   return (
-    <section className={styles.services} id="services">
-      <h2 className={styles.title}>Nuestros Servicios</h2>
+    <section className={styles.services}>
+      <h2 className={styles.title}>Skilled Nail Art</h2>
       <p className={styles.description}>
-        Ofrecemos una variedad de servicios para embellecer tus uñas y darte la mejor experiencia.
+        Descubre nuestros servicios de alta calidad y transforma tus uñas en una obra de arte.
       </p>
-      <div className={styles.serviceList}>
+      <div className={styles.servicesList}>
         <div className={styles.serviceItem}>
-          <h3>Manicura</h3>
-          <p>Manicura completa con los mejores productos para el cuidado de tus uñas.</p>
+          <i className="fas fa-hand-paper"></i>
+          <h3>Nail Care</h3>
+          <p>Cuidado especializado para uñas saludables.</p>
         </div>
         <div className={styles.serviceItem}>
-          <h3>Pedicura</h3>
-          <p>Pedicura relajante y de alta calidad para tus pies.</p>
+          <i className="fas fa-paint-brush"></i>
+          <h3>Nail Art</h3>
+          <p>Diseños creativos y elegantes para todas las ocasiones.</p>
         </div>
         <div className={styles.serviceItem}>
-          <h3>Diseños de Uñas</h3>
-          <p>Uñas artísticas y personalizadas para cualquier ocasión.</p>
+          <i className="fas fa-plus-circle"></i>
+          <h3>Add-Ons</h3>
+          <p>Complementos personalizados para tu tratamiento.</p>
         </div>
         <div className={styles.serviceItem}>
-          <h3>Extensiones de Uñas</h3>
-          <p>Extensiones de uñas duraderas con un acabado natural o glamuroso.</p>
+          <i className="fas fa-spa"></i>
+          <h3>Treatments</h3>
+          <p>Tratamientos rejuvenecedores para el cuidado de tus manos.</p>
         </div>
       </div>
     </section>

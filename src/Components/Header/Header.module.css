@@ -1,35 +1,74 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo h1 {
-    font-size: 24px;
-    color: #ff69b4; /* Color rosado para el nombre */
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav li {
-    margin-left: 20px;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #ff69b4;
-  }
+  position: relative;
+}
+
+.nav {
+  position: fixed; /* El nav se mantiene fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Completamente transparente */
+  color: white;
+  z-index: 100; /* Asegura que el nav esté por encima de otros elementos */
+  padding: 10px 0;
+  pointer-events: none; /* Elimina la posibilidad de interactuar con el nav al hacer scroll */
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  pointer-events: auto; /* Permite interactuar solo con los elementos del nav */
+}
+
+.navList li a:hover {
+  color: #ff69b4; /* Color rosa en hover */
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.heroText {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.heroSubtext {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.ctaButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctaButton:hover {
+  background-color: #e65a9e;
+}
