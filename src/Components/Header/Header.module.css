@@ -1,19 +1,21 @@
+/* Estilos del contenedor header */
 .header {
-  position: relative;
+  position: relative; 
 }
 
+/* Estilos del nav */
 .nav {
-  position: fixed; /* El nav se mantiene fijo en la parte superior */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent; /* Completamente transparente */
+  background-color: transparent;
   color: white;
-  z-index: 100; /* Asegura que el nav esté por encima de otros elementos */
+  z-index: 100; 
   padding: 10px 0;
-  pointer-events: none; /* Elimina la posibilidad de interactuar con el nav al hacer scroll */
 }
 
+/* Estilos para la lista de navegación */
 .navList {
   display: flex;
   justify-content: center;
@@ -28,36 +30,41 @@
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  pointer-events: auto; /* Permite interactuar solo con los elementos del nav */
 }
 
 .navList li a:hover {
-  color: #ff69b4; /* Color rosa en hover */
+  color: #ff69b4; 
 }
 
+/* Estilos del contenedor hero */
 .hero {
   background-size: cover;
   background-position: center;
-  height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  z-index: 1; 
+  position: relative;
 }
 
+/* Texto del héroe */
 .heroText {
   font-size: 48px;
   font-weight: bold;
   margin: 0;
 }
 
+/* Subtexto del héroe */
 .heroSubtext {
   font-size: 24px;
   margin-top: 10px;
 }
 
+/* Botón de llamada a la acción */
 .ctaButton {
   margin-top: 20px;
   padding: 10px 30px;
